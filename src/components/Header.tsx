@@ -7,30 +7,30 @@ const Header = () => {
         <img src="/images/logo.svg" alt="Disney+" />
       </Logo>
       <NavMenu>
-        <a href="/home">
+        <div>
           <img src="/images/home-icon.svg" alt="HOME" />
           <span>Home</span>
-        </a>
-        <a>
+        </div>
+        <div>
           <img src="/images/search-icon.svg" alt="SEARCH" />
           <span>SEARCH</span>
-        </a>
-        <a>
+        </div>
+        <div>
           <img src="/images/watchlist-icon.svg" alt="WATCHLIST" />
           <span>WATCHLIST</span>
-        </a>
-        <a>
+        </div>
+        <div>
           <img src="/images/original-icon.svg" alt="ORIGINALS" />
           <span>ORIGINALS</span>
-        </a>
-        <a>
+        </div>
+        <div>
           <img src="/images/movie-icon.svg" alt="MOVIES" />
           <span>MOVIES</span>
-        </a>
-        <a>
+        </div>
+        <div>
           <img src="/images/series-icon.svg" alt="SERIES" />
           <span>SERIES</span>
-        </a>
+        </div>
       </NavMenu>
     </Nav>
   )
@@ -73,7 +73,7 @@ const NavMenu = styled.div`
   position: relative;
   margin-right: auto;
   margin-left: 25px;
-  a {
+  div {
     display: flex;
     align-items: center;
     padding: 0 12px;
