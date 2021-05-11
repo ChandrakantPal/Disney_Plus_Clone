@@ -32,6 +32,7 @@ const Header = () => {
           <span>SERIES</span>
         </div>
       </NavMenu>
+      <Login>Login</Login>
     </Nav>
   )
 }
@@ -50,7 +51,7 @@ const Nav = styled.nav`
   letter-spacing: 16px;
   z-index: 4;
 `
-const Logo = styled.a`
+const Logo = styled.div`
   padding: 0;
   width: 80px;
   margin-top: 4px;
@@ -118,6 +119,22 @@ const NavMenu = styled.div`
   }
   @media (max-width: 768px) {
     display: none;
+  }
+`
+
+const Login = styled.div`
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  border: 1px solid #f9f9f9;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 4px;
+  transition: all 0.2s ease 0s;
+
+  &:hover {
+    background-color: #f9f9f9;
+    color: #000;
+    border-color: transparent;
   }
 `
 
